@@ -7,7 +7,7 @@
     src: url('./src/app/assets/Fonts/Naughty.otf');
 }
 .navbar{
-    background-color:#005EFF;
+    background-color:#ff6600 ;
     position:fixed;
     font-family: Naughty;
     font-size: 1.5em;
@@ -19,10 +19,66 @@
 
 .nav-link:hover{
     background-color:white;
-    color: #005EFF;
+    color: #ff6600 ;
+    cursor:pointer;
+}
+.nav-link:focus{
+    color:#ff6600 ;
 }
 
 .navbar-brand{
     font-family: Wowsers ;
     color:White;
+}
+.input-group{
+    float:right;
+    margin-top:1%;
+    max-width: 30%;
+
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-top: 150px;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: 9999px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: 0;
+}
+
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: #1a2580;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #1a2580;
+  content: "";
+}
+
+.hamburger span::before {
+  top: -20px;
+}
+
+.hamburger span::after {
+  bottom: -20px;
 }
